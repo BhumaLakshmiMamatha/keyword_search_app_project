@@ -12,7 +12,9 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/repos")
-@CrossOrigin(origins = "http://localhost:5173")
+/*@CrossOrigin(origins = "http://localhost:5173"*/
+@CrossOrigin(origins = "*")
+
 public class GithubController {
     private final GithubService service;
 
